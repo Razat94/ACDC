@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	 <!--- basic page needs
+    ================================================== -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>ACDC</title>
+		
+	<!-- mobile specific metas
+    ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	 
+	<!-- CSS
+    ================================================== -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- scripts
+    ================================================== -->
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>	 
+	<!-- Bootstraps default jquery ^^^ -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<!-- <script src="js/bootstrap.min.js"></script> -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	  
+	<!-- Scroll Reveal Plugin
+    ================================================== -->
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  
+</head>
+
+<style>
+	
+	.nav-pills > li > a.active {
+		background-color: ;	
+	}
+	
+	.carousel-inner img {
+      width: 100%;
+      height: 80vh;
+	}
+	
+	#officialReleasebtn {
+		background-color:  #fec810; 
+		color: white; 
+		border: 0.1rem solid #fec810;
+	}
+	
+	#officialReleasebtn:hover {
+		background-color: white;
+		color: #fec810;
+	}
+	
+	#disclaimer-section {
+		text-align: center; 
+		min-height: 80vh;
+		display: flex;
+		align-items: center;
+		padding-bottom: 10vh;
+		border: 5px solid white;
+	}
+	
+	#about-section {
+		text-align: center; 
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		background-color: #ffffe6; 
+	}
+	
+	#funfacts-text {
+		padding: 1rem;
+		font-size: 0.75rem; 
+		border: 0px solid red; 
+	}
+	
+	#email-section {
+		 background-color: #343a40;
+		// background-color: #6c757d; 
+		// #343a40;
+		color: white; 
+		text-align: center;
+		min-height: 100vh;
+		margin: 0px auto;
+		display: flex;
+		align-items: center;
+		padding-top: 2rem;
+		padding-bottom: 1rem;
+	}
+	
+	#email-container {
+		width: 70%;
+		margin: 0 auto;
+	}
+	
+	@media screen and (max-width: 576px) {
+		#email-container {
+			width: 90%;
+		}
+	}
+	
+	@media screen and (min-width: 768px) {
+		.col-md-6 img {
+			height: 12rem;
+		}
+		
+		.card-subtitle {
+			padding-bottom: 1rem;
+		}
+	}
+	
+</style>
+
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+
+	<!-- Navbar
+    ================================================== -->
+	
+	<nav class = "navbar navbar-expand-md fixed-top" id="myScrollspy">   			 
+		<span class="navbar-caption-wrap navbar-brand">
+			<a class="navbar-caption text-warning" href="https://www.acdc.com/">
+				Official ACDC Website
+			</a>
+		</span>
+       
+		<button class="navbar-toggler navbar-toggler-right ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="fa fa-bars text-warning"></i>
+		</button>
+	   
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="nav nav-pills text-warning navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="text-warning nav-link js-scroll-trigger" href="#about-section" >About</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link text-warning js-scroll-trigger" href="#band-section">The Band</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link text-warning js-scroll-trigger" href="#email-section">Email</a>
+				</li>
+			</ul>
+		</div>
+		
+    </nav>
+	
+	<!-- Carousel/Slideshow
+    ================================================== -->
+	
+	<div id = "demo" class="carousel slide" data-ride="carousel" data-interval="3000">
+		
+		<ol class="carousel-indicators">
+			<li data-target="#demo" data-slide-to="0" class="active"></li>
+			<li data-target="#demo" data-slide-to="1"></li>
+			<li data-target="#demo" data-slide-to="2"></li>
+			<li data-target="#demo" data-slide-to="3"></li>
+			<li data-target="#demo" data-slide-to="4"></li>
+			<li data-target="#demo" data-slide-to="5"></li>
+		</ol>
+		
+		<!-- The slideshow -->
+		<div class="carousel-inner">
+			
+			<div class="carousel-item active">
+			  <img src="images/carousel/slideshow-0.jpg" alt="" width="" height="">
+			</div>
+			
+			<div class="carousel-item">
+			  <img src="images/carousel/slideshow-1.jpg" alt="" width="1100" height="500">
+			</div>
+			
+			<div class="carousel-item">
+			  <img src="images/carousel/slideshow-2.jpg"  alt="" width="1100" height="500">
+			</div>
+			
+			<div class="carousel-item">
+			  <img src="images/carousel/slideshow-3.jpg"  alt="" width="1100" height="500">
+			</div>
+
+			<div class="carousel-item">
+			  <img src="images/carousel/slideshow-4.jpg" alt="" width="1100" height="500">
+			</div>
+			
+			<div class="carousel-item">
+				<img src="images/carousel/slideshow-5.jpg" alt="" width="1100" height="500">
+			</div>
+		
+		</div>
+  
+		<!-- Left and right controls -->
+		<a class="carousel-control-prev" href="#demo" data-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+		</a>
+		
+		<a class="carousel-control-next" href="#demo" data-slide="next">
+			<span class="carousel-control-next-icon"></span>
+		</a>
+	</div>
+
+	<!-- Disclaimer
+    ================================================== -->
+	
+	<section id = "disclaimer-section">  
+	
+		<div class = "text-center container">
+			<h5 class="display-3" style = "color: #fec810;">
+				Please note
+			</h5>   
+				  
+			<h3 class="display-5" style ="margin-top: 1rem; margin-bottom: 1rem;">
+				The following is a fan-based website.
+			</h3>
+				
+			<a class="btn text-uppercase js-scroll-trigger" href = "https://www.acdc.com/" id = "officialReleasebtn">
+				Please support the official website
+			</a>
+		</div>	
+		
+	</section>
+	
+	<!-- About
+    ================================================== -->
+	
+	<section id = "about-section" style = "">
+		
+		<div class="row align-items-center container" style = "margin: 0 auto;">
+		  
+			<div class="col-lg-6 order-lg-2 p-5" style = "border: 0px solid red;">
+				<h2 class="display-3" style = "display: inline-block; border-bottom: 1px solid black;">About</h2>
+				<p class = "js-scroll-trigger">
+					AC/DC is an Australian rock band, formed in 1973 by brothers Malcolm and Angus Young.
+				</p>
+			</div>
+		  
+			<div class="col-lg-6 order-lg-1">
+				<div class="p-4" style = "border: 0px solid blue;">
+					<img class="img-fluid" style = "background-size: cover;" src="images/brothers.jpg">
+				</div>
+			</div>
+		 
+		</div>
+	
+	</section>
+	
+	<!-- Fun-Facts
+    ================================================== -->
+
+	<!-- #343a40 -->
+	<section id = "funfacts" style = "background-color: white;">
+    
+		<div class="" style = "border: 0px solid black; padding-top: 7vh; padding-bottom: 2vh; width: 90%; margin: auto;"> 
+		 
+			<h1 class="display-3" style = "border: 0px solid yellow; margin: auto;  text-align: center;">
+				Fun Facts 
+			</h1>
+				
+			<div class = "row align-items-center content-row" style = "margin: 0 auto; margin-left: 0%; margin-top: 5vh; border: 0px solid blue; padding-top: 1vh;">
+				
+				<div class="col-lg-4 order-lg-2 offset-1" style = "border: 0px solid red; text-align: center; margin: auto;">
+					<img class="img-fluid " src="images/high-voltage.jpg"   alt="">
+				</div>
+		  
+				<div class="col-lg-7 order-lg-1" id = "funfacts-text" style = "">
+					<ul>
+						<li>
+						The band's name ”AC/DC” is an abbreviation for “alternating current/direct current”.
+						Malcolm and Angus Young developed the idea for the band’s name after their older sister saw the initials “AC/DC” on a sewing machine.
+						The brothers felt that this name symbolised the band’s raw energy, power-driven performances, and a love for their music.
+						</li>
+						<li>
+						Angus Young had adopted his characteristic school-uniform stage outfit. The idea was his sister Margaret’s. Angus had tried other costumes, such as Spider-Man, Zorro, a gorilla,  &amp;  a parody of Superman, named Super-Ang. In fact in its early days, most members of the band dressed in some form of glam or satin outfit but this approach was abandoned when it was discovered Melbourne band Skyhooks had already adopted this approach to their stage presentation.
+						</li>
+						<li>
+						The album <i>Back in Black</i> has sold an estimated 50 million units worldwide, making it the highest-selling album by any band and the 2nd highest-selling album by any artist in history, faling behind <i>Thriller</i> by Michael Jackson
+						</li>
+						<li>
+						On the release of the album <i>High Voltage</i> in 1976, a review in Rolling Stone magazine called the album an “all–time low” for hard rock genre. 
+						32 years later in 2008 they appeared on the cover page of the same Rolling Stone magazine.
+						</li>
+					</ul>
+				</div> 
+				
+			</div> <!-- End of class div row -->
+		</div>	
+		
+	</section>
+	
+	<!-- Meet the Band
+    ================================================== -->
+
+	<section id = "band-section" style = "border: 0px solid blue; background-color: #f6f6f6;">
+		
+		<div class = "container" style = "padding-top: 3rem;">
+			<h2 class="" style= "text-align: center; border: 0px solid green; padding-bottom: 2rem;">Meet the Band</h2>
+		
+			<div class = "row" id = "card-container">
+				<div class = "col-md-6 col-lg-4">
+					<section class = "card mb-5 one-card">
+						<img class = "card-img-top" src = "images/cards/angus.JPG">
+						<div class = "card-body" style = "text-align: center;">
+							<h3 class = "card-title">Angus Young</h3>
+							<h5 class = "card-subtitle">Guitarist</h5>
+							<p class = "card-text" style = "font-size: 0.85rem">
+							Angus McKinnon Young (born 31 March 1955) is an Australian guitarist, best known as the co-founder, lead guitarist, songwriter and only remaining original member of the Australian hard rock band AC/DC.
+							</p>
+						</div>
+					</section>
+				</div>
+				
+				<div class = "col-md-6 col-lg-4">
+					<section class = "card mb-5 one-card">
+						<img class = "card-img-top" src = "images/cards/malcolm.jpg" style = "" >
+						<div class = "card-body" style = "text-align: center;">
+							<h3 class = "card-title">Malcolm Young</h3>
+							<h5 class = "card-subtitle">Guitarist</h5>
+							<p class = "card-text" style = "font-size: 0.85rem">
+							Malcolm Mitchell Young (6 January 1953 – 18 November 2017) was an Australian musician and songwriter, best known as a co-founder, rhythm guitarist, backing vocalist and songwriter for the hard rock band AC/DC. 
+							</p>
+						</div>
+					</section>
+				</div>
+				
+				<div class = "col-md-6 col-lg-4 ">
+					<section class = "card mb-5 one-card">
+						<img class = "card-img-top" src = "images/cards/brian.jpg">
+						<div class = "card-body" style = "text-align: center;">
+							<h3 class = "card-title">Brian Johnson</h3>
+							<h5 class = "card-subtitle">Lead Vocalist</h5>
+							<p class = "card-text" style = "font-size: 0.85rem">
+							Brian Francis Johnson (born 5 October 1947) is an English singer and songwriter. In 1980, he became the third lead singer of the Australian rock band AC/DC, after the death of their second lead singer Bon Scott.
+							</p>
+						</div>
+					</section>
+				</div>
+				
+				<div class = "col-md-6 col-lg-4 ">
+					<section class = "card mb-5 one-card">
+						<img class = "card-img-top" src = "images/cards/bonnie.jpg" style = "" >
+						<div class = "card-body" style = "text-align: center;">
+							<h3 class = "card-title">Bon Scott</h3>
+							<h5 class = "card-subtitle">Lead Vocalist</h5>
+							<p class = "card-text" style = "font-size: 0.85rem">
+							Ronald Belford "Bon" Scott (9 July 1946 – 19 February 1980) was an Australian singer and songwriter, best known for being the lead vocalist and lyricist of the Australian hard rock band AC/DC from 1974 until his death in 1980.
+							</p>
+						</div>
+					</section>
+				</div>
+				
+				<div class = "col-md-6 col-lg-4 ">
+					<section class = "card mb-5 one-card">
+						<img class = "card-img-top" src = "images/cards/phil.jpg">
+						<div class = "card-body" style = "text-align: center;">
+							<h3 class = "card-title">Phil Rudd</h3>
+							<h5 class = "card-subtitle">Drums</h5>
+							<p class = "card-text" style = "font-size: 0.85rem">
+							Phillip Hugh Norman Rudd (born 19 May 1954) is an Australian drummer, best known for his membership in Australian hard rock band AC/DC from 1975 through 1983, and again from 1994 to 2015.
+							</p>
+						</div>
+					</section>
+				</div>
+				
+				<div class = "col-md-6 col-lg-4 ">
+					<section class = "card mb-5 one-card">
+						<img class = "card-img-top" src = "images/cards/clifford.jpg" style = "" >
+						<div class = "card-body" style = "text-align: center;">
+							<h3 class = "card-title">Cliff Williams</h3>
+							<h5 class = "card-subtitle">Bass</h5>
+							<p class = "card-text" style = "font-size: 0.85rem">
+							Clifford Williams (born 14 December 1949) is a retired English musician who was a member of the Australian hard rock band AC/DC as their bassist and backing vocalist from 1977 to 2016.
+							</p>
+						</div>
+					</section>
+				</div>
+				
+			</div> <!-- End of div class "row" -->
+		</div>
+		
+	</section>
+	
+	<!-- Email
+    ================================================== -->
+	
+	<section id = "email-section" class="">
+		
+		<form id = "email-container" autocomplete="on" action="" method="POST">
+			<h3 class="display-4" style = "padding-bottom: 1rem; color: #e1e9ee;">Email</h3>
+			<p> For now, this email section won't work until I get a web server running. </p>
+			<div id="" class="row form-group">
+				<div class="first-name col-sm-6">
+					<small>First Name</small>
+					<input class= "form-control form-control-sm" name = "fname" type="text" spellcheck="false" maxlength="30" data-title="First" />  
+				</div>
+					
+				<div class="last-name col-sm-6">
+					<small class="caption"> Last Name</small>
+					<input class="form-control form-control-sm" name="lname" type="text" spellcheck="false" maxlength="30" data-title="Last" />
+				</div>
+			</div>
+				 
+			<div class="form-group">
+				<small class="">Email Address <span class="required">*</span></small>
+				 <input class="form-control form-control-sm" type="email" spellcheck="false" />
+			</div>
+				  
+			<div class="form-group">
+				<small>Subject <span class="required">*</span> </small>
+				<input class="form-control form-control-sm" type="text"  spellcheck="false" />
+			</div>
+				
+			<div class="form-group">
+				<small>Message <span class="required">*</span></small>
+				<textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="3"></textarea>
+			</div>
+		
+			<a class="btn btn-light btn-xl sr-button text-center align-center" style = "" href="http://startbootstrap.com/template-overviews/creative/">Submit!</a>
+		</form>
+		
+	</section>
+
+</body>
+
+<script>
+
+	// Scroll Animations via ScrollReveal plugin
+	// https://scrollrevealjs.org
+	window.sr = ScrollReveal({ duration: 1000 });
+	window.srCard = ScrollReveal({ duration: 500 });
+
+	sr.reveal('#disclaimer');
+	sr.reveal('#funfacts');
+
+	// var nodeList = document.querySelector('#card-container');
+	var nodeList = document.querySelectorAll('.one-card');
+	srCard.reveal(nodeList);
+
+	// Add smooth scrolling
+	$(document).ready(function(){
+	  // Initialize Tooltip
+	  $('[data-toggle="tooltip"]').tooltip(); 
+	  
+	  // Add smooth scrolling to all links in navbar + footer link
+	  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+
+		  // Prevent default anchor click behavior
+		  event.preventDefault();
+
+		  // Store hash
+		  var hash = this.hash;
+
+		  // Using jQuery's animate() method to add smooth page scroll
+		  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+		  $('html, body').animate({
+			scrollTop: $(hash).offset().top
+		  }, 900, function(){
+	   
+			// Add hash (#) to URL when done scrolling (default click behavior)
+			window.location.hash = hash;
+		  });
+		} // End if
+	  });
+	})
+
+</script>
+
+</html>
